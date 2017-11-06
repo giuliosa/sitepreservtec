@@ -1,0 +1,126 @@
+/*trabalhos*/
+.trabalhos h2, .trabalhos-interno h2{
+  padding: 40px 0;
+}
+
+.trabalhos .container{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.trabalhos .container .trabalho{
+  width: calc(100%/2 - 30px);
+  margin: 0 15px 40px 15px;
+  text-align: center;
+}
+
+.trabalhos .container .trabalho img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.trabalhos .container .trabalho h3{
+
+  font-weight: bolder;
+}
+
+.trabalhos .container .trabalho p{
+  padding: 10px 20px;
+}
+
+/*Trabalho interno*/
+
+.trabalhos-interno .container{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.trabalhos-interno .container .carousel-trabalho{
+  width: 822px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/*.trabalhos-interno .container .carousel-trabalho,
+.trabalhos-interno  .container .texto-trabalho{
+  width: calc(100%/2);
+}*/
+
+.texto-trabalho ul{
+  text-align: center;
+}
+
+.texto-trabalho ul li{
+  display: inline-block;
+  margin-right: 50px;
+
+}
+
+.textow ul li{
+    display:block;
+    text-align: left ;
+    font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    list-style: disc;
+}
+
+.textow ul{
+    list-style: disc;
+}
+
+.trabalhos-interno .container h3{
+  margin-top: 0;
+}
+
+.trabalhos-interno .container .carousel-trabalho .carousel-control{
+  background: none;
+  height: auto;
+}
+
+.item.active img{
+  display: block;
+  margin: 0 auto;
+}
+
+.trabalhos-interno .container .texto-trabalho p{
+  padding: 20px 0 40px 0;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+  .trabalhos .container .trabalho{
+    width:100%;
+  }
+
+  .trabalhos-interno .container .carousel-trabalho{
+    width: 720px;
+  }
+
+}
+
+@media only screen and (max-width:767px) {
+  .trabalhos .container .trabalho{
+    width:100%;
+  }
+
+  .texto-trabalho ul li{
+    margin-right: 0;
+
+  }
+
+  .trabalhos-interno .container .carousel-trabalho{
+    width: calc(100%);
+  }
+}

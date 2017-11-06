@@ -1,0 +1,92 @@
+/*blog*/
+.blog h2{
+  margin-top: 40px;
+}
+
+.blog .container{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.blog .container .postagens, .blog .container aside{
+  margin-top: 40px;
+}
+
+.blog .container .postagens .postagem{
+  width: 70%;
+}
+
+.blog .container .postagens .postagem img{
+  width:100%;
+  height: auto;
+}
+
+.blog .container .postagens .postagem .traco{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #d3d6db;
+  margin: 20px 0;
+}
+
+.blog .container .postagens .postagem h3{
+  font-weight: bold;
+}
+
+.blog .container .postagens .postagem button{
+  margin:20px 0;
+}
+
+.blog .container aside h3{
+  margin: 30px 0;
+  font-weight: bold;
+}
+
+.blog .container .postagem .autor{
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.blog .container .postagem .autor img{
+  width: 150px;
+  height: auto;
+}
+
+.blog .container .postagem .autor .info-autor{
+  margin-left: 30px;
+}
+
+/*Comments*/
+
+#commentform{
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+#commentform input{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#commentform textarea{
+  width: 100%;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.blog .container .postagens .postagem img.avatar.avatar-32.photo{
+  width: 50px;
+}
+
+ol li div a{
+  font-size: 12px;
+}
+
+
+/*.blog .container .manutencao{
+  padding: 40px;
+  text-align: center;
+}*/

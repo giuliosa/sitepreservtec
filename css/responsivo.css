@@ -1,0 +1,362 @@
+/*Tela média*/
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    /*INDEX*/
+    /*Servicos*/
+    .servicos .servico h3 {
+        font-size: 20px;
+    }
+    /*Resultados*/
+    .resultados .titulo-numero {
+        font-size: 16px;
+    }
+    /*Equipe*/
+    .equipe .container .especialista img {
+        width: 250px;
+        margin: 0 15px;
+    }
+    /*Contato*/
+    .contato input {
+        width: 240px;
+    }
+    /*Footer*/
+    .col-2 ul {
+        margin-right: 40px;
+    }
+    /*SERVIÇOS*/
+    .servicos .servico-body {
+        margin-left: 30px;
+    }
+}
+
+
+/*Tela de tablet*/
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    /*INDEX*/
+    /*Estilos Gerais*/
+    h2 {
+        font-size: 38px;
+    }
+    /*Header*/
+    .imagem-landing {
+        height: 600px;
+    }
+    .imagem-landing .logo {
+        width: 250px;
+    }
+    .imagem-landing span {
+        vertical-align: super;
+        font-size: 18px;
+    }
+    .imagem-landing h1 {
+        font-size: 48px;
+    }
+    nav ul .link {
+        font-size: 20px;
+    }
+    /*Serviços*/
+    .servicos .servico h3 {
+        font-size: 14px;
+    }
+    /*Sobre*/
+    .sobre .container {
+        flex-direction: column;
+    }
+    .sobre .col-1 {
+        width: 100%;
+    }
+    .sobre .col-2 {
+        width: auto;
+        padding: 40px;
+    }
+    .sobre .col-2 p {
+        margin-bottom: 40px;
+    }
+    /*Resultados*/
+    .resultados .col-4 {
+        margin: 40px 5px 40px 5px;
+        padding: 15px;
+    }
+    .resultados .numero {
+        font-size: 34px;
+    }
+    /*Equipe*/
+    .equipe .container {
+        width: 100%;
+    }
+    .equipe .container .especialista img {
+        width: 200px;
+    }
+    .equipe .container .especialista h4, h5 {
+        font-size: 20px;
+    }
+    /*Contato*/
+    .contato input {
+        width: 655.2px;
+        ;
+    }
+    /*Footer*/
+    footer .container {
+        flex-wrap: wrap;
+    }
+    footer .container .col-4 img {
+        width: 200px;
+    }
+    footer .container .col-4 {
+        padding: 20px;
+    }
+    footer .container .col-4 p {
+        font-size: 14px;
+        line-height: 18px;
+        padding-right: 40px;
+    }
+    .col-2 ul {
+        margin-right: 50px;
+    }
+    /*SERVIÇOS*/
+    .servicos .servico-body {
+        margin-left: 30px;
+    }
+    .servicos .servico-diferentao {
+        margin: 40px 0;
+        display: -webkit-flex;
+        display: flex;
+        text-align: right;
+    }
+    /*SOBRE*/
+    .mais-sobre .container {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .mais-sobre .lateral {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .mais-sobre .lateral blockquote {
+        margin: 30px 60px;
+    }
+    /*PORTFOLIO*/
+    .trabalhos .container {
+        flex-wrap: wrap;
+    }
+    /*BLOG*/
+    .blog .container {
+        flex-direction: column-reverse;
+    }
+    .blog .container .postagens .postagem {
+        width: 100%;
+    }
+    .blog .container aside {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    .blog .container aside ul li {
+        display: inline-block;
+    }
+}
+
+
+/*Tela de telefone*/
+
+@media only screen and (max-width:767px) {
+    /*INDEX*/
+    /*Estilos Gerais*/
+    h2 {
+        font-size: 36px;
+    }
+    /*Header*/
+    header .menu-login {
+        top: 0px;
+        z-index: 20;
+    }
+    header .menu-hamburguer {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .imagem-landing h1 {
+        margin-top: 90px;
+        font-size: 40px;
+    }
+    .imagem-landing .logo, .imagem-interna .logo {
+        display: block;
+        margin: 80px auto 0 auto;
+        width: 250px;
+    }
+    .imagem-landing span {
+        display: block;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 0;
+    }
+    /*Serviços*/
+    .servicos .container {
+        flex-direction: column;
+    }
+    .servicos .servico {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .servicos .servico-diferentao .servico-body p {
+        text-align: left;
+        margin: 0 40px;
+    }
+    /*Sobre*/
+    .sobre .container {
+        flex-direction: column;
+    }
+    .sobre .col-1 {
+        width: 100%;
+    }
+    .sobre .col-2 {
+        width: auto;
+        padding: 40px;
+    }
+    .sobre .col-2 p {
+        margin-bottom: 40px;
+    }
+    /*resultados*/
+    .resultados .container {
+        flex-direction: column;
+    }
+    .resultados .col-4 {
+        width: auto;
+        margin: 20px 5px 0 5px;
+        padding: 15px;
+    }
+    .resultados .numero {
+        font-size: 40px;
+    }
+    /*comentarios*/
+    .comentarios .cliente blockquote {
+        padding: 40px 15px;
+    }
+    /*Equipe*/
+    .equipe .especialista:not(.ativo) {
+        display: none;
+    }
+    .equipe .controller {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    .equipe .controller .glyphicon {
+        color: #415f9d;
+    }
+    .equipe .controller .glyphicon:hover {
+        color: #233b6e;
+    }
+    /*Contato*/
+    .contato input {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .contato textarea {
+        margin: 10px 0;
+        width: 100%;
+    }
+    /*Footer*/
+    footer .container {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    footer .container .col-4 img {
+        width: 200px;
+    }
+    footer .container .col-2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    /*HEADER INTERNO*/
+    .imagem-interna .logo {
+        margin-top: 70px;
+        width: auto;
+        height: auto;
+    }
+    .imagem-interna h2 {
+        margin-top: 200px;
+        font-size: 36px;
+    }
+    .imagem-interna h2 a {
+        text-decoration: none;
+        color: #eff0f4;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    /*SERVICO*/
+    .servicos-interno .servico-detalhado {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .servicos-interno .servico-detalhado .servico-head {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .servicos-interno .container .servico-detalhado:nth-child(even){
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+
+
+    .servicos-interno .servico-detalhado:nth-child(even) .servico-body p {
+        text-align: left;
+    }
+    /*SOBRE*/
+    .caracteristicas .container .col-2 {
+        width: 100%;
+    }
+    .caracteristicas .imagem-sobre img {
+        display: none;
+    }
+    .mais-sobre .container {
+        flex-direction: column;
+    }
+    .mais-sobre .lateral {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .mais-sobre .lateral blockquote {
+        margin: 30px 0;
+    }
+    /*PORTFOLIO*/
+    .trabalhos .container {
+        flex-wrap: wrap;
+    }
+    /*BLOG*/
+    .blog .container {
+        flex-direction: column-reverse;
+    }
+    .blog .container .postagens .postagem {
+        width: 100%;
+    }
+    .blog .container aside {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .blog .container aside input {
+        width: 100%;
+    }
+    .blog .container aside ul li {
+        display: inline-block;
+    }
+    /*CONTATO*/
+    .contato-interno .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contato-interno .container .col-2 {
+        width: 100%;
+    }
+}

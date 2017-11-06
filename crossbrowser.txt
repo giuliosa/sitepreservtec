@@ -1,0 +1,39 @@
+O que está quebrando em cada Browser && Bugs gerais && Requisitos faltantes
+
+<!-- GERAIS -->
+
+
+Chrome:
+
+
+<!--*********************************************************************-->
+
+Firefox:
+
+
+<!--*********************************************************************-->
+
+Opera:
+
+
+<!--*********************************************************************-->
+
+Safari:
+
+
+<!--*********************************************************************-->
+
+Internet Explorer:
+
+
+<!--*********************************************************************-->
+
+Microsoft Edge:
+<!-- GERAIS -->
+- O telefone está como link;
+
+<!-- PORTIFÓLIO -->
+- Tamanho do carousel;
+
+<!-- CONTATO -->
+- Mapa na página contato não está funcionando;

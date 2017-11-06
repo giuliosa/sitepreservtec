@@ -1,0 +1,104 @@
+/*Sobre */
+/*Por que nos escolher*/
+.caracteristicas h2{
+  padding: 40px 0;
+}
+
+.caracteristicas .container,
+.caracteristicas .container .carac{
+  display: -webkit-flex;
+  display: flex;
+}
+
+.caracteristicas .container .carac{
+  align-items: center;
+}
+
+.caracteristicas .container .col-2{
+  width: calc(100%/2);
+}
+
+.caracteristicas .imagem-sobre img{
+  max-width: 100%;
+  height: auto;
+}
+
+.caracteristicas .container .carac h3{
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.caracteristicas .container .carac p{
+  padding-right: 30px;
+  margin-bottom: 40px;
+}
+
+.caracteristicas .container .carac .carac-left img{
+  width: 56px;
+  margin-right: 30px;
+}
+
+/*Mais sobre*/
+.mais-sobre .container,
+.mais-sobre .linha-tempo .evento{
+  display: -webkit-flex;
+  display: flex;
+}
+
+.mais-sobre .linha-tempo{
+  width: 70%;
+}
+
+.mais-sobre{
+  margin: 40px 0;
+}
+
+.mais-sobre .evento-left{
+    width: 60px;
+}
+
+.mais-sobre .evento-right{
+    margin-bottom: 20px;
+}
+
+.mais-sobre .evento-right p,
+.mais-sobre .evento-right h3{
+    padding: 0 30px;
+}
+
+.mais-sobre  h3{
+    font-weight: bolder;
+    line-height: 30px;
+}
+
+.mais-sobre .evento .linha{
+  content: "";
+  display: none;
+  width: 4px;
+  height: auto;
+  background: #d3d6db;
+  /*margin: 0 30px;*/
+}
+
+.mais-sobre .lateral{
+  width: 30%;
+  margin-left: 60px;
+}
+
+.mais-sobre .lateral .blockquote{
+  background-color: #415f9d;
+  color: #eff0f4;
+  text-align: center;
+  font-style: italic;
+  padding: 20px 50px;
+  margin-bottom: 30px;
+}
+
+.mais-sobre .lateral ul{
+  list-style-type: disc;
+}
+
+.mais-sobre .lateral button{
+  margin-top: 30px;
+  height: 60px;
+}
