@@ -51,7 +51,7 @@ $url.= $_SERVER['REQUEST_URI'];
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
     <!--<link href="css/bootstrap.css" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:900|Lora" rel="stylesheet"> 
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 
     <!-- WP HEADER -->
@@ -79,14 +79,21 @@ $url.= $_SERVER['REQUEST_URI'];
         <?php if (!is_page('desenvolvimento') && !is_page('analise-do-site') && !is_page('formulario-feedback')): ?>
           <nav>
               <div class="container">
-                <?php
-                	$args = array(
-                		'menu' => 'principal',
-                		'theme_location' => 'header-menu',
-                		'container' => false
-                	);
-                	wp_nav_menu( $args );
-                ?>
+                <div class="left">
+                  <a href="/preservtec/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-branco.png" alt="Logo Preservtec"></a>
+                </div>
+                <div class="right">
+
+                  <?php
+                    $args = array(
+                      'menu' => 'principal',
+                      'theme_location' => 'header-menu',
+                      'container' => false
+                    );
+                    wp_nav_menu( $args );
+                  ?>
+                  
+                </div>
               </div>
           </nav>
 

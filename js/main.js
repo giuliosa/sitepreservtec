@@ -1,3 +1,8 @@
+//Tooltip
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 // Rslides
 $(function() {
     $(".rslides").responsiveSlides();
@@ -10,20 +15,20 @@ $(".rslides").responsiveSlides({
 });
 
 // Fixar o nav no topo da página
-$(function(){
- var nav = $('nav');
- var section = $('.servicos');
- $(window).scroll(function () {
-   if ($(this).scrollTop() > $('header').innerHeight()) {
-     nav.addClass("menu-fixo");
-     section.addClass('ajustar-tudo');
+// $(function(){
+//  var nav = $('nav');
+//  var section = $('.servicos');
+//  $(window).scroll(function () {
+//    if ($(this).scrollTop() > $('header').innerHeight()) {
+//      nav.addClass("menu-fixo");
+//      section.addClass('ajustar-tudo');
 
-   } else {
-     nav.removeClass("menu-fixo");
-     section.removeClass("ajustar-tudo");
-   }
- });
-});
+//    } else {
+//      nav.removeClass("menu-fixo");
+//      section.removeClass("ajustar-tudo");
+//    }
+//  });
+// });
 
 //Hamburguer Menu Dropdown
 $('.menu-hamburguer').click(function() {
@@ -75,23 +80,23 @@ debounce = function(func, wait, immediate){
 }());
 
 // Adicionar animação de entrada
-Visibility.onVisible(function(){
-  setTimeout(function(){
-    $(".imagem-landing h1").addClass("animated fadeInDown");
-  }, 400);
+// Visibility.onVisible(function(){
+//   setTimeout(function(){
+//     $(".barra-info h1").addClass("animated fadeInDown");
+//   }, 400);
 
-  setTimeout(function(){
-    $(".imagem-landing h3").addClass("animated fadeInDown");
-  }, 450);
+//   setTimeout(function(){
+//     $(".barra-info h3").addClass("animated fadeInDown");
+//   }, 450);
 
-  setTimeout(function(){
-    $(".imagem-landing ul a").addClass("animated fadeInDown");
-  }, 500);
+//   setTimeout(function(){
+//     $(".barra-info ul a").addClass("animated fadeInDown");
+//   }, 500);
 
-  setTimeout(function(){
-    $(".imagem-landing .action").addClass("animated fadeInDown");
-  }, 600);
-});
+//   setTimeout(function(){
+//     $(".barra-info .action").addClass("animated fadeInDown");
+//   }, 600);
+// });
 
 
 /*Identificar o clique no menu
@@ -99,7 +104,7 @@ Visibility.onVisible(function(){
   Verificar a distância entre o alvo e o topo
   Animar o scrool até o alvo*/
 
-$('header .imagem-landing .action a').click(function(e){
+$('header .barra-info .action a').click(function(e){
   e.preventDefault();
 
   var id = $(this).attr('href'),

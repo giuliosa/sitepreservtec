@@ -23,22 +23,26 @@ Version: 1.0
 
 /*Estilos gerais*/
 
+/*
+
+Cores
+    azul-escuro #233b6e
+    azul-claro #415f9d
+    cinza-claro #eff0f4
+    cinza-escuro #d3d6db
+ */
+
 body {
-    font-family: 'Raleway', helvetica Arial, Helvetica, sans-serif;
+    
     font-size: 24px;
     overflow-x: hidden;
 }
 
 p, .blockquote {
-    font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
+    font-family: 'Lora', Georgia, "Times New Roman", serif;
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
-}
-
-.owl-nav, .owl-dots{
-  display: none;
-  visibility: hidden;
 }
 
 /*
@@ -62,6 +66,19 @@ p + p:first-line {
   font-weight: 400;
 }*/
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Exo 2', sans-serif;
+}
+
+a{
+    color: #eff0f4;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #d3d6db;
+}
+
 h2 {
     font-size: 42px;
     text-transform: uppercase;
@@ -71,7 +88,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Raleway', helvetica Arial, Helvetica, sans-serif;
+    font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
 }
 
@@ -80,7 +97,7 @@ h4 {
 }
 
 button{
-    font-family: 'Raleway', helvetica Arial, Helvetica, sans-serif;
+    font-family: 'Exo 2', sans-serif;
     display: block;
     border: none;
     margin: 0 auto;
@@ -96,7 +113,7 @@ button{
 
 
 .butn input{
-  font-family: 'Raleway', helvetica Arial, Helvetica, sans-serif;
+  font-family: 'Exo 2', sans-serif;
   display: block !important;
   border: none;
   margin: 50px auto 0 auto !important;
@@ -185,7 +202,6 @@ header .menu-login {
     z-index: 99;
 }
 
-
 header .menu-login:hover, header .menu-hamburguer:hover, header .cross:hover {
     background-color: #233b6e;
     cursor: pointer;
@@ -219,7 +235,7 @@ header .cross{
 
 header .cross span {
     display: block;
-    font-family: 'Raleway', helvetica Arial, Helvetica, sans-serif;
+    font-family: 'Exo 2', sans-serif;
     margin: 0 8px;
     color: #eff0f4;
     font-weight: bolder;
@@ -271,32 +287,45 @@ header .menu-hamburguer .tracinho {
     background-color: #eff0f4;
 }
 
-.imagem-landing {
+.barra-info {
     position: relative;
     width: 100%;
-    height: 800px;
-    background-image: url("img/web/bitmap.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #233b6e;
 }
 
-.imagem-landing .logo {
+.barra-info .container{
+    display: flex;
+}
+
+.barra-info .left, .barra-info .right{
+    width: 100%;
+}
+
+.barra-info .right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra-info .right .fa-user-circle-o{
+    margin: 9px 0 0 90px;
+}
+
+
+.barra-info .logo {
     margin-top: 40px;
-    width: auto;
+    width: 200px;
     height: auto;
 }
 
-.imagem-landing span {
-    font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
-    font-size: 18px;
+.barra-info span {
+    font-family: 'Lora', Georgia, "Times New Roman", serif;
+    font-size: 12px;
     color: #eff0f4;
     margin-left: 30px;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
 }
 
-.imagem-landing h1 {
+.barra-info h1 {
     margin-top: 120px;
     font-size: 52px;
     color: #eff0f4;
@@ -307,40 +336,37 @@ header .menu-hamburguer .tracinho {
     z-index: 80;
 }
 
-.imagem-landing h3 {
-    padding:0 150px;
-    font-size: 18px;
-    color: #eff0f4;
-    font-weight: lighter;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px black;
-    z-index: 80;
-}
 
-.imagem-landing ul {
+.barra-info ul {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
             justify-content: center;
 }
 
-.imagem-landing ul a {
-    width: 50px;
-    height: 50px;
-    margin: 40px 10px;
+.barra-info ul a {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-.imagem-landing ul a li img {
+.barra-info ul li{
+    font-size: 12px;
+    color:#eff0f4;
+    margin-top: 10px;
+}
+
+.barra-info ul a li img {
     display: block;
-    margin: 15px auto;
-    width: 24px;
-    height: 24px;
+    margin: -5px auto;
+    width: 9px;
+    height: 9px;
 }
 
 .imagem-interna{
   width: 100%;
-  background-image: url("img/web/imagem-landing.jpg");
+  background-image: url("img/web/barra-info.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -846,103 +872,47 @@ section h2{
 
 }*/
 
-@-webkit-keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-
-  40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0,-4px,0);
-    transform: translate3d(0,-4px,0);
-  }
-}
-
-@keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-
-  40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0,-4px,0);
-    transform: translate3d(0,-4px,0);
-  }
-}
-
-header .glyphicon{
-  width: 50px;
-  display: block;
-  margin: 0 auto;
-  text-decoration: none;
-  text-align: center;
-  font-family: 'Glyphicons Halflings';
-  font-size: 50px;
-  color: #415f9d;
-  transition: all .2s linear;
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-header .glyphicon:hover{
-  color: #233b6e;
-}
-
 nav {
     background-color: #415f9d;
     height: 70px;
-    font-family: 'Raleway', helvetica Arial, Helvetica, sans-serif;
+    font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
     transition: all .3s ease;
 }
 
+nav .container{
+    display: flex;
+
+}
+
+nav .container .left{
+    width: 30%
+}
+ nav .container .right{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav img{
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+}
+
 nav ul {
     height: 70px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-            justify-content: center;
+    -webkit-justify-content: right;
+            justify-content: right;
+}
+
+nav ul li{
+    display: inline-block;
 }
 
 nav ul a {
     display: block;
-    padding: 18px 15px;
+    padding: 17px 15px;
     text-decoration: none;
     font-weight: bolder;
     color: #eff0f4;
@@ -951,7 +921,7 @@ nav ul a {
 
 nav ul a:hover {
     display: block;
-    padding: 18px 15px;
+    padding: 17px 15px;
     text-decoration: none;
     color: #eff0f4;
     background-color: #233b6e;
@@ -1120,16 +1090,16 @@ nav li.current_page_item a {
 }
 
 .resultados .numero {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 40px;
     font-weight: 900;
 }
 
 .resultados .titulo-numero {
-    font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
+    font-family: 'Lora', Georgia, "Times New Roman", serif;
     font-size: 20px;
     text-shadow: 2px 2px 5px black;
-    
+
 }
 
 .resultados .titulo-numero a, .resultados .titulo-numero-master a{
@@ -1138,15 +1108,15 @@ nav li.current_page_item a {
 }
 
 .resultados .numero-master {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 70px;
     font-weight: 900;
 }
 
 .resultados .titulo-numero-master {
-    font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
+    font-family: 'Lora', Georgia, "Times New Roman", serif;
     font-size: 40px;
-    text-shadow: 2px 2px 5px black;    
+    text-shadow: 2px 2px 5px black;
 }
 
 .resultados button {
@@ -1221,7 +1191,7 @@ nav li.current_page_item a {
 
 .parceiros .container ul li{
     display: inline-block;
-    
+
 }
 
 .parceiros .container .partner{
@@ -1345,7 +1315,7 @@ footer .container .col-4 p:first-child {
 }
 
 footer .container .col-4 ul li {
-    font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
+    font-family: 'Lora', Georgia, "Times New Roman", serif;
     font-size: 16px;
     line-height: 28px;
 }
@@ -1406,10 +1376,10 @@ footer .traco {
 
 
 /*Animações*/
-
-.js .imagem-landing h1, .js .imagem-landing h3,.js .imagem-landing ul a, .js .imagem-landing button, .js .imagem-landing .action{
+/* 
+.js .barra-info h1, .js .barra-info h3,.js .barra-info ul a, .js .barra-info button, .js .barra-info .action{
     opacity: 0;
-}
+} */
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -1558,21 +1528,21 @@ footer .traco {
         font-size: 38px;
     }
     /*Header*/
-    .imagem-landing {
+    .barra-info {
         height: 600px;
     }
-    .imagem-landing .logo {
+    .barra-info .logo {
         width: 250px;
     }
-    .imagem-landing span {
+    .barra-info span {
         vertical-align: super;
         font-size: 18px;
     }
-    .imagem-landing h1 {
+    .barra-info h1 {
         font-size: 48px;
     }
 
-    .imagem-landing h3 {
+    .barra-info h3 {
         padding:0 50px;
     }
     nav ul .link {
@@ -1806,21 +1776,21 @@ footer .traco {
     nav {
         display: none;
     }
-    .imagem-landing h1 {
+    .barra-info h1 {
         margin-top: 20px;
         font-size: 40px;
     }
-    
-    .imagem-landing h3 {
+
+    .barra-info h3 {
         padding:0 20px;
     }
 
-    .imagem-landing .logo, .imagem-interna .logo {
+    .barra-info .logo, .imagem-interna .logo {
         display: block;
         margin: 50px auto 0 auto;
         width: 250px;
     }
-    .imagem-landing span {
+    .barra-info span {
         display: block;
         font-size: 18px;
         text-align: center;
@@ -2152,7 +2122,7 @@ footer .traco {
       color: #333;
       font-size: 12px;
     }
-    
+
     .contato-analise .container .form-analise h3{
       font-size: 30px;
     }
@@ -2160,7 +2130,7 @@ footer .traco {
     .butn input{
         margin: 80px auto 0 auto !important;
     }
-    
+
     .analise-footer ul {
     display: -webkit-flex;
     display: flex;
@@ -2173,7 +2143,7 @@ footer .traco {
         height: 30px;
         margin: 40px 15px;
     }
-    
+
     .analise-footer ul a li img {
         display: block;
         margin: 8px auto;
@@ -2197,11 +2167,11 @@ footer .traco {
       color: #333;
       font-size: 12px;
     }
-    
+
     .contato-feedback .container .form-feedback h3{
       font-size: 30px;
     }
-    
+
     .feedback-footer ul {
     display: -webkit-flex;
     display: flex;
@@ -2214,7 +2184,7 @@ footer .traco {
         height: 30px;
         margin: 40px 15px;
     }
-    
+
     .feedback-footer ul a li img {
         display: block;
         margin: 8px auto;

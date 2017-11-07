@@ -8,6 +8,12 @@
  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <!-- Inicio da section SERVIÇOS  -->
 
+    <header>
+      <h1>Soluções em tecnologia <br> para sua empresa</h1>
+                <h3>Desde digitalização de documentos, até agência digital. A Preservtec tem de tudo para 
+                    melhorar sua empresa e negócio</h3>
+    </header>
+
     <section id="servicos" class="servicos" data-group='servico'>
         <h2>O que fazemos?</h2>
         <!-- <div class="container"> -->
@@ -24,10 +30,7 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/img/icones/monitor.svg" alt="icone-teclado">
                   <h3>Tecnologia e Suporte</h3>
               </li>
-              <!--li role="presentation" class="servico" data-click='monitoramento'>
-                  <img src="<?php// echo get_template_directory_uri(); ?>/img/icones/cftv.png" alt="icone-monitor">
-                  <h3>Monitoramento eletrônico</h3-->
-              </li>
+              
             </ul>
 
             <div class="container">
@@ -104,7 +107,7 @@
 
     <!-- section SOBRE  -->
 
-    <section class="sobre">
+    <!-- <section class="sobre">
         <h2>Sobre</h2>
         <div class="container">
             <div class="col-1">
@@ -115,11 +118,7 @@
                 <button type="button" onClick="location.href='/preservtec/sobre'" name="button">Conheça mais</button>
             </div>
         </div>
-    </section>
-
-    <?php include(TEMPLATEPATH . '/inc/resultados-include.php');?>
-
-    <?php include(TEMPLATEPATH . '/inc/comentarios-include.php');?>
+    </section> -->
 
     <!-- Seção Parceiros e convênios -->
     <section class="parceiros">
@@ -140,22 +139,5 @@
       </div>
     </section>
 
-    <!-- Seção EQUIPE -->
-    <!-- <section class="equipe">
-        <h2>Nossos Especialistas</h2>
-        <div class="container">
-            <?php// if(have_rows('equipe_time')): while(have_rows('equipe_time')) : the_row(); ?>
-            <div class="especialista">
-                <img src="<?php //the_sub_field('imagem_funcionario');?>" alt="imagem de um especialista">
-                <h4><?php //the_sub_field('nome_funcionario');?></h4>
-                <h5><?php// the_sub_field('cargo_funcionario');?></h5>
-            </div>
-            <?php// endwhile; else : endif; ?>
-
-        </div>
-
-    </section> -->
-
-    <?php include(TEMPLATEPATH . '/inc/contato-include.php');?>
     <?php endwhile; else: endif?>
 <?php get_footer(); ?>
