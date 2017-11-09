@@ -1,0 +1,421 @@
+/* 
+    Para o evento
+*/
+
+/*Estilos gerais*/
+
+/*
+
+Cores
+    azul-escuro #233b6e
+    azul-claro #415f9d
+    cinza-claro #eff0f4
+    cinza-escuro #d3d6db
+ */
+
+ h1, h2, h3, h4, h5, h6{
+    font-family: 'Exo 2', sans-serif !important;
+}
+
+ /* Header */
+.logo-evento{
+    margin:10px 40px;
+}
+
+.logo-evento a img{
+    z-index: 99;
+    position: relative;     
+}
+
+/* Banner */
+.banner-evento{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 700px;
+    z-index: 1;
+    text-align: center;
+    color: #eff0f4;
+    background-image: url("../img/web/banner-evento.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-evento h1{
+    margin-top: 260px;
+    font-size: 69px;
+    font-weight: 400;
+}
+
+.banner-evento h3{
+    font-family: 'Lora', Georgia, "Times New Roman", serif ;
+    text-transform: none;
+    font-size: 28px;
+}
+
+.banner-evento h5{
+    font-family: 'Lora', Georgia, "Times New Roman", serif;
+    text-transform: none;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/* Informações do evento */
+.ajuste-top{
+    margin-top: 620px;
+}
+
+.linha-flex{
+    display: flex;
+    padding: 0;
+    /* height: 370px; */
+}
+
+.linha-flex .col-double{
+    width: 50%;
+    display: flex;
+}
+
+
+.linha-flex .info-evento{
+    width: 50%;
+    padding: 30px 40px;
+    background: #415f9d; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #415f9d , #233b6e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #415f9d, #233b6e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #415f9d, #233b6e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #415f9d , #233b6e); /* Standard syntax */
+    color: #eff0f4;
+    
+}
+
+.info-evento h2{
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 36px;
+}
+
+.info-evento p{
+    margin-top: 20px;
+}
+
+.linha-flex .imagem-info-evento{
+    background-image: url("../img/web/info-imagem.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    width: 50%;    
+}
+
+.linha-flex .data-evento{
+    background: #eff0f4;
+    padding: 30px 40px;    
+    width: 50%;  
+}
+
+.data-evento h4{
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.data-evento p{
+    margin :0;
+}
+
+/* local do evento e formulário de incrição */
+
+
+
+.linha-flex .imagem-local-evento{
+    background-image: url("../img/web/bomjesus.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    width: 50%;   
+}
+
+.linha-flex .local-evento{
+    background: #eff0f4;
+    padding: 30px 40px;    
+    width: 50%; 
+}
+
+.local-evento h4{
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.local-evento p{
+    margin :0;
+}
+
+.linha-flex .form-evento{
+    width: 50%;
+    padding: 30px 40px;
+    background: #666; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #666 , #434343); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #666, #434343); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #666, #434343); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #666 , #434343); /* Standard syntax */
+    color: #eff0f4;
+    
+}
+
+.form-evento h2{
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 36px;
+}
+
+.form-evento p{
+    margin-top: 20px;
+}
+
+.form-evento label, .form-evento .nf-error-msg{
+    font-size:14px;
+}
+
+.form-evento input{
+    padding-left: 8px;
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+
+.form-evento .butn input{
+    width: 100% !important;
+}
+
+/* Footer */
+
+footer {
+    padding: 40px;
+    background: #415f9d; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #415f9d , #233b6e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #415f9d, #233b6e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #415f9d, #233b6e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #415f9d , #233b6e); /* Standard syntax */
+    color: #eff0f4;
+}
+
+footer .foo {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.col-2 {
+    width: calc(100%/2);
+}
+
+
+.col-2 ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+}
+
+.foo ul a {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 8px 5px !important;
+}
+
+.foo .siga{
+    margin: 10px 20px 0 0;
+}
+
+.foo ul img {
+    display: block  !important;
+    margin: 10px auto !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+
+
+
+
+/*Responsivo*/
+/*Tela média*/
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    
+}
+
+
+/*Tela de tablet*/
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    /* Tela Tablet */
+    .logo-evento a img{
+        width: 150px;    
+    }
+
+    /* Banner */
+
+    .banner-evento{
+        height: 650px;
+    }
+
+    .banner-evento h1{
+        margin-top: 220px;
+        font-size: 48px;
+        font-weight: 400;
+    }
+
+    .banner-evento h3{
+        font-size: 20px;
+    }
+
+    /* Informações do evento */
+    .ajuste-top{
+        margin-top: 560px;
+    }
+
+    .linha-flex{
+        flex-direction: column;
+    }
+
+    
+    .linha-flex .info-evento, 
+    .linha-flex .form-evento,
+    .linha-flex .col-double{
+        width: 100%;
+    }
+
+    /* Footer */
+
+    footer{
+        padding: 20px 40px 20px 40px !important;
+    }
+
+    .foo .logo{
+        width: 150px;
+    }
+
+    .foo .siga{
+        font-size: 18px; 
+    }
+
+    .foo ul a {
+        width: 30px !important;
+        height: 30px !important;
+        margin: 6px 5px !important;
+    }
+
+    .foo ul img {
+        margin: 7px auto !important;
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .col-2 ul {
+        margin-right: 0 !important;
+    }
+    
+
+}
+
+
+/*Tela de telefone*/
+
+@media only screen and (max-width:767px) {
+    
+    .logo-evento{
+        text-align: center;
+    }
+
+    .logo-evento a img{
+        width: 150px;    
+    }
+
+    /* Banner */
+
+    .banner-evento{
+        height: 450px;
+        padding: 0 40px;
+    }
+
+    .banner-evento h1{
+        margin-top: 120px;
+        font-size: 27px;
+    }
+
+    .banner-evento h3{
+        font-size: 16px;
+    }
+
+    .banner-evento h5{
+        font-size: 16px;
+    }
+
+    /* Informações do evento */
+    .ajuste-top{
+        margin-top: 360px;
+    }
+
+    .linha-flex{
+        flex-direction: column;
+    }
+
+    .col-double{
+        flex-direction: column;        
+    }
+
+    
+    .linha-flex .info-evento,
+    .linha-flex .imagem-info-evento,
+    .linha-flex .data-evento,
+    .linha-flex .local-evento,
+    .linha-flex .imagem-local-evento,
+    .linha-flex .form-evento,
+    .linha-flex .col-double{
+        width: 100%;
+    }
+
+    /* Footer */
+
+    footer{
+        padding: 20px 40px 20px 40px !important;
+    }
+
+    .foo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foo .col-2{
+        width: 100%;
+    }
+
+    .foo .logo{
+        width: 150px;
+    }
+
+    .foo .siga{
+        font-size: 15px; 
+    }
+
+    .foo ul a {
+        width: 30px !important;
+        height: 30px !important;
+        margin: 6px 5px !important;
+    }
+
+    .foo ul img {
+        margin: 7px auto !important;
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .col-2 ul {
+        margin-right: 0 !important;
+    }
+
+
+}
+

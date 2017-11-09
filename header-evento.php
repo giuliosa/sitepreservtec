@@ -62,44 +62,12 @@ $url.= $_SERVER['REQUEST_URI'];
 
 <body>
     <header>
-    <?php
-      if(is_page('home')) {
-         include(TEMPLATEPATH . '/inc/header-home.php');
-       }else if(is_page('desenvolvimento')){
-         include(TEMPLATEPATH . '/inc/header-dev.php');
-       }else if(is_page('analise-do-site')){
-         include(TEMPLATEPATH . '/inc/header-analise.php');
-       }else if(is_page('formulario-feedback')){
-         include(TEMPLATEPATH . '/inc/header-formulario.php');
-       } else {
-         include(TEMPLATEPATH . '/inc/header-interno.php');
-       }
-     ?>
 
-        <?php if (!is_page('desenvolvimento') &&
-                  !is_page('analise-do-site') &&
-                  !is_page('formulario-feedback')): ?>
-          <nav>
-              <div class="container">
-                <div class="left">
-                  <a href="/preservtec/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-branco.png" alt="Logo Preservtec"></a>
-                </div>
-                <div class="right">
+        <div class="logo-evento">
+          <a href="/preservtec/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-branco.png" alt="Logo Preservtec"></a>
+        </div>
 
-                  <?php
-                    $args = array(
-                      'menu' => 'principal',
-                      'theme_location' => 'header-menu',
-                      'container' => false
-                    );
-                    wp_nav_menu( $args );
-                  ?>
 
-                </div>
-              </div>
-          </nav>
-
-        <?php endif; ?>
         
         <!-- Facebook Pixel Code -->
         <script>

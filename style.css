@@ -7,6 +7,7 @@
 @import 'css/portfolio.css';
 @import 'css/blog.css';
 @import 'css/contato.css';
+@import 'css/evento.css';
 @import 'css/odometer.css';
 @import 'css/flexslider.css';
 
@@ -32,8 +33,7 @@ Cores
     cinza-escuro #d3d6db
  */
 
-body {
-    
+body {    
     font-size: 24px;
     overflow-x: hidden;
 }
@@ -45,29 +45,8 @@ p, .blockquote {
     font-weight: 400;
 }
 
-/*
-p + p {
-  text-indent: 2.5em;
-}
-p:first-letter {
-  font-size: 3.5em;
-  line-height: 1em;
-  font-weight: bolder;
-  float: left;
-  margin: 0 0.107em 0 0;
-}
-p + p:first-letter {
-  font-size: 1em;
-  line-height: 1.25em;
-  float: none;
-  margin: 0;
-}
-p + p:first-line {
-  font-weight: 400;
-}*/
-
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo 2', sans-serif ;
 }
 
 a{
@@ -191,27 +170,9 @@ button:hover , .butn input:hover{
 
 /*Header*/
 
-header .menu-login {
-    position: fixed;
-    right: 0;
-    top: 70px;
-    background-color: #415f9d;
-    width: 50px;
-    height: 50px;
-    transition: all .3s ease;
-    z-index: 99;
-}
-
-header .menu-login:hover, header .menu-hamburguer:hover, header .cross:hover {
+ header .menu-hamburguer:hover, header .cross:hover {
     background-color: #233b6e;
     cursor: pointer;
-}
-
-header .menu-login img {
-    display: block;
-    margin: 10px auto;
-    width: 30px;
-    height: 30px;
 }
 
 header .menu-hamburguer, header .cross {
@@ -287,6 +248,8 @@ header .menu-hamburguer .tracinho {
     background-color: #eff0f4;
 }
 
+/* Barra do topo */
+
 .barra-info {
     position: relative;
     width: 100%;
@@ -325,16 +288,7 @@ header .menu-hamburguer .tracinho {
     /* vertical-align: bottom; */
 }
 
-.barra-info h1 {
-    margin-top: 120px;
-    font-size: 52px;
-    color: #eff0f4;
-    font-weight: bolder;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px black;
-    z-index: 80;
-}
+
 
 
 .barra-info ul {
@@ -365,12 +319,12 @@ header .menu-hamburguer .tracinho {
 }
 
 .imagem-interna{
-  width: 100%;
-  background-image: url("img/web/barra-info.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    width: 100%;
+    background-image: url("img/web/barra-info.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .imagem-interna .logo{
@@ -401,476 +355,8 @@ header .menu-hamburguer .tracinho {
   color: #d3d6db;
 }
 
-/*Landing page: Desenvolvimento*/
-.imagem-interna-dev{
-  width: 100%;
-  padding-bottom: 50px;
-  background-image: url("img/web/imagem-dev.jpg");
-  /*background-color: #415f9d;*/
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.imagem-interna-dev h1{
-  margin-top: 50px;
-  margin-bottom: 90px;
-  font-size: 38px;
-  color: #eff0f4 ;
-  text-shadow: 1px 2px 3px #222;
-  font-weight: bolder;
-  text-align: center;
-  text-transform: uppercase;
-}
 
-.imagem-interna-dev h1 span{
-  font-size: 0;
-}
-
-.imagem-interna-dev .linha ul{
-  margin-top: 30px;
-}
-
-.imagem-interna-dev .linha ul li{
-  color: #eff0f4;
-  text-shadow: 1px 2px 3px #222;
-  margin-bottom: 8px;
-}
-
-.imagem-interna-dev .linha{
-  display: flex;
-  flex-direction: row;
-}
-
-.imagem-interna-dev .linha .perguntas,
-.imagem-interna-dev .linha .formulario{
-  width: 50%;
-}
-
-.imagem-interna-dev .linha .formulario{
-  background-color: rgb(65,95,157, 0.6);
-  padding: 30px;
-  margin-bottom: 100px;
-}
-
-.imagem-interna-dev .linha .formulario label,
-.imagem-interna-dev .linha .formulario p{
-  color: #eff0f4;
-}
-
-.imagem-interna-dev .linha .formulario input{
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.imagem-interna-dev .linha .formulario textarea{
-  width: 100%;
-  resize: none;
-  margin-bottom: 15px;
-}
-
-.imagem-interna-dev .action {
-  text-align: center;
-}
-
-.imagem-interna-dev .action span{
-  color: #eff0f4;
-  display: block;
-  margin-bottom: 20px;
-}
-
-/*Desenvolvimento - Sobre*/
-
-section{
-  padding: 30px 0;
-}
-
-section h2{
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.sobre-dev {
-  background-color: #eff0f4;
-}
-
-/*Desenvolvimento - Serviços*/
-.servicos-dev h2{
-  margin-bottom: 50px;
-}
-
-.servicos-dev .container{
-  display: flex;
-}
-
-.servicos-dev .container .servico{
-  padding: 0 10px;
-  width: calc(100%/4);
-}
-
-.servicos-dev .container .servico img{
-  width: 80px;
-  height: 70px;
-}
-
-/*Desenvolvimento - Difereciais*/
-.diferenciais{
-  background-color: #eff0f4;
-}
-
-.diferenciais .cont-right{
-    /*padding-right: 15px;*/
-    padding-left: 15px;
-    /*margin-right: auto;*/
-    margin-left: auto;
-
-}
-
-@media (min-width: 768px) {
-  .diferenciais .cont-right {
-    width: 950px;
-  }
-}
-@media (min-width: 992px) {
-  .diferenciais .cont-right {
-    width: 1070px;
-  }
-}
-@media (min-width: 1200px) {
-  .diferenciais .cont-right {
-    width: 1370px;
-  }
-}
-
-.diferenciais .cont-left{
-    padding-right: 15px;
-    /*padding-left: 15px;*/
-    margin-right: auto;
-    /*margin-left: auto;*/
-
-}
-
-@media (min-width: 768px) {
-  .diferenciais .cont-left {
-    width: 950px;
-  }
-}
-@media (min-width: 992px) {
-  .diferenciais .cont-left {
-    width: 1070px;
-  }
-}
-@media (min-width: 1200px) {
-  .diferenciais .cont-left {
-    width: 1370px;
-  }
-}
-
-.diferenciais h2{
-  margin-bottom: 80px;
-}
-
-.quebra{
-  width: 100%;
-  height: 90px;
-  font-size: 50px;
-  text-align: center;
-  /*background-color:#415f9d;*/
-  margin: 60px 0;
-  padding-top: 45px;
-}
-
-.quebra .linha{
-  content: "";
-  display: block;
-  margin: 0 auto;
-  height: 5px;
-  width: 50%;
-  border-radius: 30px;
-  background-color: #444;
-}
-
-/*Dev: ecommerce*/
-
-.diferenciais .ecommerce .container{
-  display: flex;
-  margin-bottom: 40px;
-}
-
-.diferenciais .ecommerce .container h4{
-  font-size: 24px;
-}
-
-.diferenciais .ecommerce .body{
-  margin-right: 80px;
-}
-
-.diferenciais .ecommerce img{
-  margin-left: 80px;
-  margin-left: 1px;
-  height: 500px;
-}
-
-.diferenciais .ecommerce .responsa{
-  height: 120px;
-}
-
-
-/*Dev: institucional*/
-
-.diferenciais .institucional .container{
-  display: flex;
-  margin-bottom: 40px;
-}
-
-.diferenciais .institucional .container h4{
-  font-size: 24px;
-}
-
-.diferenciais .institucional .body{
-  margin-left: 80px;
-}
-
-.diferenciais .institucional img{
-  height: 350px;
-}
-
-.diferenciais .institucional .responsa{
-  height: 120px;
-}
-
-
-/*Dev: aplicativo*/
-.diferenciais .aplicativo .container .body{
-  display: flex;
-  margin-bottom: 40px;
-}
-
-.diferenciais .aplicativo .container h4{
-  padding-left: 20px;
-  margin-bottom: 30px;
-  font-size: 24px;
-}
-
-.diferenciais .aplicativo img{
-  height: 700px;
-  margin: 0 25px;
-}
-
-.diferenciais .aplicativo .responsa{
-  height: 120px;
-}
-
-.diferenciais .aplicativo .body p{
-  padding-top: 40px;
-  padding-left: 20px;
-}
-
-/* Dev: sistemas */
-.diferenciais .sistema .container{
-  display: flex;
-  margin-bottom: 40px;
-}
-
-.diferenciais .sistema .container h4{
-  font-size: 24px;
-}
-
-.diferenciais .sistema .body{
-  margin-right: 80px;
-}
-
-.diferenciais .sistema img{
-  height: 300px;
-  right: -20px;
-}
-
-.diferenciais .sistema .responsa{
-  height: 120px;
-}
-
-/* Desenvolvimento: Contato */
-.contato-dev{
-  width: 100%;
-  padding-bottom: 50px;
-  background-image: url("img/web/imagem-contato.jpg");
-  /*background-color: #415f9d;*/
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.contato-dev .container .form-dev{
-  background-color: rgb(65,95,157, 0.6);
-  text-align: center;
-  width: 550px;
-  display: block;
-  padding: 30px;
-  margin: 0 auto;
-}
-.contato-dev .container .form-dev p, .contato-dev .container .form-dev label{
-  color: #eff0f4;
-}
-
-.contato-dev .container .form-dev input{
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.contato-dev .container .form-dev textarea{
-  resize: none;
-  width: 100%;
-  margin-bottom: 20px;
-}
-/*header .action{
-  display: block;
-}*/
-
-/* Analise de Site */
-.analise-header{
-  padding: 15px;
-  /*background-color: #d3d6db;*/
-  background: #415f9d; /* For browsers that do not support gradients */
-
-}
-
-.contato-analise{
-  background: #415f9d; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient( #415f9d , #233b6e); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient( #415f9d, #233b6e); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient( #415f9d, #233b6e); /* For Firefox 3.6 to 15 */
-  background: linear-gradient( #415f9d , #233b6e); /* Standard syntax */
-}
-
-
-.contato-analise .container .form-analise{
-  background-color: rgb(211,214,219);
-  text-align: center;
-  width: 550px;
-  display: block;
-  padding: 30px;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.contato-analise .container .form-analise h3{
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.contato-analise .container .form-analise img{
-  width: 100% !important;
-}
-.contato-analise .container .form-analise p, .contato-analise .container .form-analise label{
-  color: #333;
-  font-size: 14px;
-}
-
-.contato-feedback{
-  background: #415f9d; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient( #415f9d , #233b6e); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient( #415f9d, #233b6e); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient( #415f9d, #233b6e); /* For Firefox 3.6 to 15 */
-  background: linear-gradient( #415f9d , #233b6e); /* Standard syntax */
-}
-
-.form-feedback{
-  background-color: rgb(211,214,219);
-  width: 750px;
-  display: block;
-  padding: 30px;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.form-feedback h3{
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.form-feedback img{
-  width: 100% !important;
-}
-
-.form-feedback textarea{
-  resize: none;
-  font-size: 14px;
-}
-.form-feedback p, .form-feedback label{
-  color: #333;
-  font-size: 14px;
-}
-
-.feedback-footer{
-  background: #233b6e;
-}
-
-.analise-footer ul {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-            justify-content: center;
-}
-
-.analise-footer ul a {
-    width: 60px;
-    height: 60px;
-    margin: 50px 15px;
-}
-
-.analise-footer ul a li img {
-    display: block;
-    margin: 15px auto;
-    width: 30px;
-    height: 30px;
-}
-
-
-.form-analise input{
-  width: 100%;
-  font-size: 14px;
-  /*margin-bottom: 15px;*/
-}
-
-.feedback-footer ul {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-            justify-content: center;
-}
-
-.feedback-footer ul a {
-    width: 60px;
-    height: 60px;
-    margin: 50px 15px;
-}
-
-.feedback-footer ul a li img {
-    display: block;
-    margin: 15px auto;
-    width: 30px;
-    height: 30px;
-}
-
-
-.form-feedback input{
-  width: 100%;
-  font-size: 14px;
-  /*margin-bottom: 15px;*/
-}
-
-.form-feedback select{
-  font-size: 14px;
-  /*margin-bottom: 15px;*/
-}
-/*
-.nf-form-cont{
-  width: 300px;
-  display: block;
-  margin: 0 auto;
-
-}*/
 
 nav {
     background-color: #415f9d;
@@ -929,6 +415,30 @@ nav ul a:hover {
 
 nav li.current_page_item a {
     background-color: #233b6e;
+}
+
+/* Imagem apresentação do site */
+
+.imagem-apresentacao{
+    width: 100%;
+    position: absolute;
+    background-image: url("img/web/imagem-apresentacao.jpg");
+    /*background-color: #415f9d;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagem-apresentacao h1 {
+    margin-top: 120px;
+    font-size: 52px;
+    color: #eff0f4;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    /* text-shadow: 2px 2px 5px black; */
+    z-index: 80;
 }
 
 
@@ -2200,3 +1710,474 @@ footer .traco {
     }
 
 }
+
+/*Landing page: Desenvolvimento*/
+.imagem-interna-dev{
+  width: 100%;
+  padding-bottom: 50px;
+  background-image: url("img/web/imagem-dev.jpg");
+  /*background-color: #415f9d;*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imagem-interna-dev h1{
+  margin-top: 50px;
+  margin-bottom: 90px;
+  font-size: 38px;
+  color: #eff0f4 ;
+  text-shadow: 1px 2px 3px #222;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.imagem-interna-dev h1 span{
+  font-size: 0;
+}
+
+.imagem-interna-dev .linha ul{
+  margin-top: 30px;
+}
+
+.imagem-interna-dev .linha ul li{
+  color: #eff0f4;
+  text-shadow: 1px 2px 3px #222;
+  margin-bottom: 8px;
+}
+
+.imagem-interna-dev .linha{
+  display: flex;
+  flex-direction: row;
+}
+
+.imagem-interna-dev .linha .perguntas,
+.imagem-interna-dev .linha .formulario{
+  width: 50%;
+}
+
+.imagem-interna-dev .linha .formulario{
+  background-color: rgb(65,95,157, 0.6);
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+.imagem-interna-dev .linha .formulario label,
+.imagem-interna-dev .linha .formulario p{
+  color: #eff0f4;
+}
+
+.imagem-interna-dev .linha .formulario input{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.imagem-interna-dev .linha .formulario textarea{
+  width: 100%;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.imagem-interna-dev .action {
+  text-align: center;
+}
+
+.imagem-interna-dev .action span{
+  color: #eff0f4;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*Desenvolvimento - Sobre*/
+
+section{
+  padding: 30px 0;
+}
+
+section h2{
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.sobre-dev {
+  background-color: #eff0f4;
+}
+
+/*Desenvolvimento - Serviços*/
+.servicos-dev h2{
+  margin-bottom: 50px;
+}
+
+.servicos-dev .container{
+  display: flex;
+}
+
+.servicos-dev .container .servico{
+  padding: 0 10px;
+  width: calc(100%/4);
+}
+
+.servicos-dev .container .servico img{
+  width: 80px;
+  height: 70px;
+}
+
+/*Desenvolvimento - Difereciais*/
+.diferenciais{
+  background-color: #eff0f4;
+}
+
+.diferenciais .cont-right{
+    /*padding-right: 15px;*/
+    padding-left: 15px;
+    /*margin-right: auto;*/
+    margin-left: auto;
+
+}
+
+@media (min-width: 768px) {
+  .diferenciais .cont-right {
+    width: 950px;
+  }
+}
+@media (min-width: 992px) {
+  .diferenciais .cont-right {
+    width: 1070px;
+  }
+}
+@media (min-width: 1200px) {
+  .diferenciais .cont-right {
+    width: 1370px;
+  }
+}
+
+.diferenciais .cont-left{
+    padding-right: 15px;
+    /*padding-left: 15px;*/
+    margin-right: auto;
+    /*margin-left: auto;*/
+
+}
+
+@media (min-width: 768px) {
+  .diferenciais .cont-left {
+    width: 950px;
+  }
+}
+@media (min-width: 992px) {
+  .diferenciais .cont-left {
+    width: 1070px;
+  }
+}
+@media (min-width: 1200px) {
+  .diferenciais .cont-left {
+    width: 1370px;
+  }
+}
+
+.diferenciais h2{
+  margin-bottom: 80px;
+}
+
+.quebra{
+  width: 100%;
+  height: 90px;
+  font-size: 50px;
+  text-align: center;
+  /*background-color:#415f9d;*/
+  margin: 60px 0;
+  padding-top: 45px;
+}
+
+.quebra .linha{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  height: 5px;
+  width: 50%;
+  border-radius: 30px;
+  background-color: #444;
+}
+
+/*Dev: ecommerce*/
+
+.diferenciais .ecommerce .container{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.diferenciais .ecommerce .container h4{
+  font-size: 24px;
+}
+
+.diferenciais .ecommerce .body{
+  margin-right: 80px;
+}
+
+.diferenciais .ecommerce img{
+  margin-left: 80px;
+  margin-left: 1px;
+  height: 500px;
+}
+
+.diferenciais .ecommerce .responsa{
+  height: 120px;
+}
+
+
+/*Dev: institucional*/
+
+.diferenciais .institucional .container{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.diferenciais .institucional .container h4{
+  font-size: 24px;
+}
+
+.diferenciais .institucional .body{
+  margin-left: 80px;
+}
+
+.diferenciais .institucional img{
+  height: 350px;
+}
+
+.diferenciais .institucional .responsa{
+  height: 120px;
+}
+
+
+/*Dev: aplicativo*/
+.diferenciais .aplicativo .container .body{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.diferenciais .aplicativo .container h4{
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.diferenciais .aplicativo img{
+  height: 700px;
+  margin: 0 25px;
+}
+
+.diferenciais .aplicativo .responsa{
+  height: 120px;
+}
+
+.diferenciais .aplicativo .body p{
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+/* Dev: sistemas */
+.diferenciais .sistema .container{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.diferenciais .sistema .container h4{
+  font-size: 24px;
+}
+
+.diferenciais .sistema .body{
+  margin-right: 80px;
+}
+
+.diferenciais .sistema img{
+  height: 300px;
+  right: -20px;
+}
+
+.diferenciais .sistema .responsa{
+  height: 120px;
+}
+
+/* Desenvolvimento: Contato */
+.contato-dev{
+  width: 100%;
+  padding-bottom: 50px;
+  background-image: url("img/web/imagem-contato.jpg");
+  /*background-color: #415f9d;*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contato-dev .container .form-dev{
+  background-color: rgb(65,95,157, 0.6);
+  text-align: center;
+  width: 550px;
+  display: block;
+  padding: 30px;
+  margin: 0 auto;
+}
+.contato-dev .container .form-dev p, .contato-dev .container .form-dev label{
+  color: #eff0f4;
+}
+
+.contato-dev .container .form-dev input{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contato-dev .container .form-dev textarea{
+  resize: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/*header .action{
+  display: block;
+}*/
+
+/* Analise de Site */
+.analise-header{
+  padding: 15px;
+  /*background-color: #d3d6db;*/
+  background: #415f9d; /* For browsers that do not support gradients */
+
+}
+
+.contato-analise{
+  background: #415f9d; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient( #415f9d , #233b6e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient( #415f9d, #233b6e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient( #415f9d, #233b6e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient( #415f9d , #233b6e); /* Standard syntax */
+}
+
+
+.contato-analise .container .form-analise{
+  background-color: rgb(211,214,219);
+  text-align: center;
+  width: 550px;
+  display: block;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contato-analise .container .form-analise h3{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.contato-analise .container .form-analise img{
+  width: 100% !important;
+}
+.contato-analise .container .form-analise p, .contato-analise .container .form-analise label{
+  color: #333;
+  font-size: 14px;
+}
+
+.contato-feedback{
+  background: #415f9d; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient( #415f9d , #233b6e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient( #415f9d, #233b6e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient( #415f9d, #233b6e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient( #415f9d , #233b6e); /* Standard syntax */
+}
+
+.form-feedback{
+  background-color: rgb(211,214,219);
+  width: 750px;
+  display: block;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-feedback h3{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.form-feedback img{
+  width: 100% !important;
+}
+
+.form-feedback textarea{
+  resize: none;
+  font-size: 14px;
+}
+.form-feedback p, .form-feedback label{
+  color: #333;
+  font-size: 14px;
+}
+
+.feedback-footer{
+  background: #233b6e;
+}
+
+.analise-footer ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.analise-footer ul a {
+    width: 60px;
+    height: 60px;
+    margin: 50px 15px;
+}
+
+.analise-footer ul a li img {
+    display: block;
+    margin: 15px auto;
+    width: 30px;
+    height: 30px;
+}
+
+
+.form-analise input{
+  width: 100%;
+  font-size: 14px;
+  /*margin-bottom: 15px;*/
+}
+
+.feedback-footer ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.feedback-footer ul a {
+    width: 60px;
+    height: 60px;
+    margin: 50px 15px;
+}
+
+.feedback-footer ul a li img {
+    display: block;
+    margin: 15px auto;
+    width: 30px;
+    height: 30px;
+}
+
+
+.form-feedback input{
+  width: 100%;
+  font-size: 14px;
+  /*margin-bottom: 15px;*/
+}
+
+.form-feedback select{
+  font-size: 14px;
+  /*margin-bottom: 15px;*/
+}
+/*
+.nf-form-cont{
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+
+}*/
