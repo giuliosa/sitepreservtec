@@ -10,9 +10,58 @@
 
     <header class="imagem-apresentacao">
       <h1>Soluções em tecnologia <br> para sua empresa</h1>
-                <h3>Desde digitalização de documentos, até agência digital. A Preservtec tem de tudo para 
-                    melhorar sua empresa e negócio</h3>
+      <p>
+        Desde digitalização de documentos, até agência digital. <br> A Preservtec tem de tudo para 
+                    melhorar sua empresa e negócio
+      </p>
+
+      <div class="linha">
+        <div class="col-3">
+          <img src="<?php echo get_template_directory_uri() ?>/img/icones/home-photo-camera.svg" alt="icone-camera">
+          <h3>Digitalização de Documentos</h3>
+          <p>Deixe seus serviços modernos, e facilite na velocidade ao achar seus documentos</p>
+          <button>Veja Mais</button>
+        </div>
+        <div class="col-3">
+          <img src="<?php echo get_template_directory_uri() ?>/img/icones/home-monitor.svg" alt="">
+          <h3>Marketing Digital</h3>
+          <p>Seja facilmente encontrado pelos seus clientes na web com estratégias de Marketing digital</p>
+          <button>Veja Mais</button>
+        </div>
+        <div class="col-3">
+          <img src="<?php echo get_template_directory_uri() ?>/img/icones/home-dev.svg" alt="">
+          <h3>Desenvolvimento</h3>
+          <p>Desenvolva aplicativos, sistemas e sites para melhorar seu workflow</p>
+          <button>Veja Mais</button>
+        </div>
+      </div>
     </header>
+
+    <section class="depoimentos">
+
+      <h2>Depoimentos</h2>
+      <p>Nossos Casos de Sucesso</p>
+
+      
+
+      <div class="linha owl-carousel">
+
+        <?php if (have_rows('comentarios_clientes')) : while (have_rows('comentarios_clientes')) : the_row(); ?>
+          <div class="depoimento item">
+            <div class="texto-depoimento">
+              <p><?php the_sub_field('quote_mensagem'); ?> </p>
+            </div>
+            <div class="autor-depoimento">
+              <img src="<?php the_sub_field('quote_imagem'); ?>" alt="">
+              <h5><?php the_sub_field('quote_cliente'); ?></h5>
+            </div>
+          </div>       
+            
+         
+        <?php endwhile; else : endif; ?>
+
+      </div>
+    </section>
 
     
 

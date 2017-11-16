@@ -20,8 +20,10 @@
     // Registra o bootstrap
     wp_register_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), false, false );
 
+    // Registra o owl carousel
+    wp_register_script( 'owl.carousel', get_template_directory_uri() . '/js/libs/owl.carousel.min.js', array('jquery'), false, false );
 
-    // Registra o bootstrap
+    // Registra o Google Maps Api
     wp_register_script( 'maps', get_template_directory_uri() . '/js/map.js', array(), false, false );
 
     // Coloca script no site

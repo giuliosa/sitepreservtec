@@ -31,7 +31,7 @@ $(".rslides").responsiveSlides({
 // });
 
 //Hamburguer Menu Dropdown
-$('.menu-hamburguer').click(function() {
+$('.menu-burguer').click(function() {
   // $(this).toggleClass('desativar');
   $('.drop').toggleClass('ativar');
 });
@@ -144,3 +144,26 @@ $('[data-group]').each(function(){
 		$(this).addClass(activeClass);
 	});
 });
+
+// Owl Carousel activation
+
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 20,
+  nav: false,
+  autoplay: true,
+  animateOut: 'slideOutDown',
+  animateIn: 'flipInX',
+  autoplayTimeout: 6000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 3
+    }
+  }
+})

@@ -1,9 +1,7 @@
 <?php
-
-
-$url = "http://". $_SERVER['HTTP_HOST'];
-$url.= "/";
-$url.= $_SERVER['REQUEST_URI'];
+$url = "http://" . $_SERVER['HTTP_HOST'];
+$url .= "/";
+$url .= $_SERVER['REQUEST_URI'];
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -40,7 +38,7 @@ $url.= $_SERVER['REQUEST_URI'];
     <!--  para o sistema Open Graph -->
     <meta property="og:title" content="<?php the_field('titulo'); ?>" />
     <meta property="og:type" content="<?php the_field('type_op'); ?>" />
-    <meta property="og:url" content="<?php echo $url;?>" />
+    <meta property="og:url" content="<?php echo $url; ?>" />
     <meta property="og:image" content="<?php the_field('imagem'); ?>" />
     <meta property="og:description" content="<?php the_field('descricao'); ?>" />
     <meta property="og:site_name" content="<?php the_field('titulo'); ?>" />
@@ -62,46 +60,29 @@ $url.= $_SERVER['REQUEST_URI'];
 
 <body>
     <header>
-    <?php
-      if(is_page('home')) {
-         include(TEMPLATEPATH . '/inc/header-home.php');
-       }else if(is_page('desenvolvimento')){
-         include(TEMPLATEPATH . '/inc/header-dev.php');
-       }else if(is_page('analise-do-site')){
-         include(TEMPLATEPATH . '/inc/header-analise.php');
-       }else if(is_page('formulario-feedback')){
-         include(TEMPLATEPATH . '/inc/header-formulario.php');
-       } else {
-         include(TEMPLATEPATH . '/inc/header-interno.php');
-       }
-     ?>
-
-        <?php if (!is_page('desenvolvimento') &&
-                  !is_page('analise-do-site') &&
-                  !is_page('formulario-feedback')): ?>
+    
           <nav>
               <div class="container">
                 <div class="left">
                   <a href="/preservtec/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-branco.png" alt="Logo Preservtec"></a>
                 </div>
                 <div class="right">
-                  <span><i class="fa fa-bars menu-burguer" aria-hidden="true"></i>
-</span>
+                  <span><i class="fa fa-bars menu-burguer" aria-hidden="true"></i></span>
                   <?php
                     $args = array(
-                      'menu'              => 'principal',
-                      'menu_class'        => 'drop',
-                      'theme_location'    => 'header-menu',
-                      'container'         => false
+                        'menu' => 'principal',
+                        'menu_class' => 'drop',
+                        'theme_location' => 'header-menu',
+                        'container' => false
                     );
-                    wp_nav_menu( $args );
-                  ?>
+                    wp_nav_menu($args);
+                    ?>
 
                 </div>
               </div>
           </nav>
 
-        <?php endif; ?>
+        
         
         <!-- Facebook Pixel Code -->
         <script>

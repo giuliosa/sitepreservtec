@@ -10,14 +10,16 @@
 @import 'css/evento.css';
 @import 'css/odometer.css';
 @import 'css/flexslider.css';
+@import 'css/owl.carousel.min.css';
+@import 'css/owl.theme.default.min.css';
 
 /*
 Theme Name: Preservtec Theme
-Theme URI: http://preservtec.com.br
+Theme URI: https://preservtec.com.br
 Author: Giulio Sá
 Author URI: http://giuliosa.com.br
 Description: Tema criado para a empresa Preservtec
-Version: 1.0
+Version: 1.0.1
 */
 
 
@@ -170,6 +172,11 @@ button:hover , .butn input:hover{
 
 /*Header*/
 
+.menu-burguer{
+    display: none;
+    opacity: 0;
+}
+
  header .menu-hamburguer:hover, header .cross:hover {
     background-color: #233b6e;
     cursor: pointer;
@@ -202,16 +209,7 @@ header .cross span {
     font-weight: bolder;
 }
 
-header .drop {
-    visibility:hidden;
-    opacity: 0;
-    position: fixed;
-    left: 0;
-    top: 50px;
-    background-color: #415f9d;
-    transition: all .3s ease;
-    z-index: 99;
-}
+
 
 header .drop ul {
     display: block;
@@ -368,7 +366,6 @@ nav {
 
 nav .container{
     display: flex;
-
 }
 
 nav .container .left{
@@ -398,7 +395,7 @@ nav ul li{
 
 nav ul a {
     display: block;
-    padding: 17px 15px;
+    padding: 18px 15px;
     text-decoration: none;
     font-weight: bolder;
     color: #eff0f4;
@@ -407,7 +404,7 @@ nav ul a {
 
 nav ul a:hover {
     display: block;
-    padding: 17px 15px;
+    padding: 18px 15px;
     text-decoration: none;
     color: #eff0f4;
     background-color: #233b6e;
@@ -427,6 +424,7 @@ nav li.current_page_item a {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
     background-size: cover;
 }
 
@@ -435,10 +433,85 @@ nav li.current_page_item a {
     font-size: 52px;
     color: #eff0f4;
     font-weight: bolder;
-    text-align: center;
     text-transform: uppercase;
     /* text-shadow: 2px 2px 5px black; */
     z-index: 80;
+}
+
+.imagem-apresentacao p{
+    font-size: 16px;
+    color: #eff0f4;
+
+}
+
+
+.imagem-apresentacao .linha{
+    display: flex;
+    margin: 60px 0;
+}
+
+.imagem-apresentacao .linha .col-3{
+    width: calc(100%/3 - 3%);    
+    margin: 40px 60px;
+    padding: 50px 40px;
+    color:#eff0f4;
+    background: #415f9d; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #415f9d , #233b6e);
+    background: -webkit-linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* Standard syntax */
+}
+
+.imagem-apresentacao .linha .col-3 img{
+    width:80px;
+}
+
+.imagem-apresentacao .linha .col-3 p{
+    font-size: 16px;
+    margin:30px 0;
+}
+
+/* Depoimentos */
+
+.depoimentos{
+    margin-top:900px;    
+    text-align: center;
+}
+
+.depoimentos p{
+    margin-bottom: 60px;    
+}
+
+.depoimentos .linha{
+    display: flex;
+    padding: 0 60px;
+}
+
+.depoimento{
+    background: #d3d6db;
+    padding: 30px 40px;
+    text-align: left;
+}
+
+
+.depoimento .autor-depoimento{
+    display: flex;
+}
+
+.texto-depoimento p{
+    font-style: italic;
+}
+
+.depoimento .autor-depoimento img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+
+.depoimento .autor-depoimento h5{
+    font-size: 25px;
+    margin-left: 20px;
 }
 
 
@@ -960,6 +1033,25 @@ footer .traco {
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
     /*INDEX*/
+
+    .menu-burguer{
+        display: none;
+        opacity: 0;
+    }
+    /* Imagem Apresentação */
+    .imagem-apresentacao .linha .col-3{
+        margin: 40px 20px;
+        padding: 50px 40px;        
+    }
+
+    .imagem-apresentacao .linha .col-3 img{
+        width:60px;
+    }
+
+    .imagem-apresentacao .linha .col-3 p{
+        font-size: 14px;
+    }
+
     /*Servicos*/
     .servicos .servico h3 {
         font-size: 14px;
@@ -1038,15 +1130,9 @@ footer .traco {
         font-size: 38px;
     }
     /*Header*/
-    .barra-info {
-        height: 600px;
-    }
-    .barra-info .logo {
-        width: 250px;
-    }
+    
     .barra-info span {
-        vertical-align: super;
-        font-size: 18px;
+        font-size: 12px;
     }
     .barra-info h1 {
         font-size: 48px;
@@ -1055,9 +1141,77 @@ footer .traco {
     .barra-info h3 {
         padding:0 50px;
     }
-    nav ul .link {
+    
+    .menu-burguer{
+        display: none;
+        opacity: 0;
+    }
+
+    nav{
+        height: 56px;
+    }
+
+    nav img{
+        margin-top: 15px;
+    }
+    
+    nav ul a{
+        font-size: 14px;
+        padding: 18px 10px;
+    }
+
+    nav ul a:hover{
+        font-size: 14px;
+        padding: 18px 10px;
+    }
+
+    nav img{
+        width: 150px;
+    }
+
+    /* Imagem Apresentação */
+    .imagem-apresentacao .linha .col-3{
+        margin: 40px 10px;
+        padding: 30px 20px;        
+    }
+
+    .imagem-apresentacao .linha .col-3 img{
+        width:52px;
+    }
+
+    .imagem-apresentacao .linha .col-3 h3{
         font-size: 20px;
     }
+    
+
+    .imagem-apresentacao .linha .col-3 p{
+        font-size: 14px;
+    }
+
+    /* Depoimentos */
+
+    .depoimentos{
+        margin-top: 820px;
+    }
+    .depoimento{
+        padding: 30px 20px;
+    }
+
+    .texto-depoimento p{
+        font-size: 12px;
+    }
+
+    .depoimento .autor-depoimento img{
+        width:80px;
+        height:80px;
+    }
+
+    .depoimento .autor-depoimento h5{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+
     /*Serviços*/
     .servicos .servico h3 {
         font-size: 14px;
@@ -1263,6 +1417,12 @@ footer .traco {
 @media only screen and (max-width:767px) {
     /*INDEX*/
     /*Estilos Gerais*/
+
+    header .drop {
+        visibility:hidden;
+        opacity: 0;
+        
+    }
     h2 {
         font-size: 36px;
     }
@@ -1276,36 +1436,116 @@ footer .traco {
         top: 50px;
         z-index: 20;
     }
-    header .menu-hamburguer {
+    header .menu-burguer {
         display: block;
         visibility:visible;
         opacity: 1;
-
-
-    }
-    nav {
-        display: none;
-    }
-    .barra-info h1 {
-        margin-top: 20px;
-        font-size: 40px;
     }
 
-    .barra-info h3 {
-        padding:0 20px;
+    nav img{
+        width: 150px;
     }
 
-    .barra-info .logo, .imagem-interna .logo {
-        display: block;
-        margin: 50px auto 0 auto;
-        width: 250px;
+    nav .right{
+        /* margin-top: 70px; */
+        display: flex;
+        text-align: right;
+        flex-direction: column;
     }
+
+    nav .right span{
+        height: 80px;
+        color: #f1f1f1;
+        padding-top: 15px ;
+        cursor: pointer;
+    }
+
+    nav ul{
+        text-align: right;
+        height: 100%;
+        background-color: #415f9d;
+    }
+
+    nav ul li{
+        width: 100%;
+    }
+
+    nav ul a:hover{
+        width: 100%;
+    }
+
+    .barra-info .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
     .barra-info span {
-        display: block;
-        font-size: 18px;
+        font-size: 12px;
         text-align: center;
         margin-left: 0;
     }
+
+    .imagem-apresentacao{
+        z-index:-1;
+        padding: 10px;
+    }
+
+    .imagem-apresentacao h1 {
+        margin-top: 80px;
+        font-size: 26px;
+    }
+
+    .imagem-apresentacao p{
+        font-size: 16px;
+    }
+
+    .imagem-apresentacao .linha{
+        flex-direction: column;
+    }
+
+    .imagem-apresentacao .linha .col-3{
+        width: calc(100%);
+        margin: 40px 0;
+    }
+
+    .imagem-apresentacao .linha .col-3 img{
+        width:50px;
+    }
+
+    .imagem-apresentacao .linha .col-3 h3{
+        font-size: 20px;
+    }    
+
+    .imagem-apresentacao .linha .col-3 p{
+        font-size: 12px;
+    }
+
+    /* Depoimentos */
+
+    .depoimentos{
+        margin-top:1660px;    
+        text-align: center;
+    }
+
+    .depoimento{
+        padding: 30px 20px;
+    }
+
+    .texto-depoimento p{
+        font-size: 12px;
+    }
+
+    .depoimento .autor-depoimento img{
+        width:80px;
+        height:80px;
+    }
+
+    .depoimento .autor-depoimento h5{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+
     /*Serviços*/
     /*.servicos .container {
         flex-direction: column;
