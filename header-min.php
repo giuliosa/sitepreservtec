@@ -61,10 +61,10 @@ $url .= $_SERVER['REQUEST_URI'];
 <body>
     <header>
     
-          <nav>
+          <nav class="menu-geral">
               <div class="container">
                 <div class="left">
-                  <a href="/preservtec/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-branco.png" alt="Logo Preservtec"></a>
+                  <a href="/preservtec/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Preservtec"></a>
                 </div>
                 <div class="right">
                   <span><i class="fa fa-bars menu-burguer" aria-hidden="true"></i></span>

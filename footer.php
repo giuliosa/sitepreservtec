@@ -17,7 +17,7 @@
 		?>
 
 		<?php
-      if(is_page('contato')) {
+      if(is_page('contato') || is_page('digitalizacao')) {
 				echo '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSy58jX-AnCLhdZw4Msbbhwg6l_8kP0qw&callback=initMap"></script>';
        }
      ?>

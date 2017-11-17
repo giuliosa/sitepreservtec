@@ -1,0 +1,398 @@
+/*Estilos gerais
+
+Cores
+    azul-escuro #233b6e
+    azul-claro #415f9d
+    cinza-claro #eff0f4
+    cinza-escuro #d3d6db
+    cinza-mais-escuro-ainda #434343
+ */
+
+ /* Menu */
+
+ .menu-geral{
+    background-color: transparent;
+    position: relative;
+    z-index: 99;
+ }
+
+ header .menu-geral .menu-burguer {
+    display: block;
+    visibility:visible;
+    opacity: 1;
+    margin-top:15px;
+    color: #233b6e;
+}
+
+header .menu-geral .drop {
+    visibility:hidden;
+    opacity: 0;
+    
+}
+
+.menu-geral .right{
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+}
+
+.menu-geral .right span{
+    height: 80px;
+    color: #f1f1f1;
+    padding-top: 15px ;
+    cursor: pointer;
+}
+
+.menu-geral ul{
+    text-align: right;
+    background-color: transparent;
+}
+
+.menu-geral ul li{
+    width: 100%;
+    background-color: #415f9d;
+    background: -webkit-linear-gradient( #415f9d , #233b6e);
+    background: -webkit-linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* Standard syntax */
+}
+
+.menu-geral ul a:hover{
+    width: 100%;
+}
+
+ /* Banner */
+
+ .banner-digitalizacao{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-image: url("../img/web/banner-digitalizacao.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+ }
+
+ .banner-digitalizacao h1{
+    margin: 170px 0 40px 0;
+    font-size: 52px;
+    color: #233b6e;
+    font-weight: bolder;
+    text-transform: uppercase;
+ }
+
+ .banner-digitalizacao p{
+    margin-bottom: 80px;
+    font-size: 20px;
+    color: #233b6e;    
+ }
+
+ .banner-digitalizacao .buttons{
+    display: flex;
+    margin-bottom: 80px;
+ }
+
+ .banner-digitalizacao .buttons .botao{
+    height: 50px;
+    font-family: 'Exo 2', sans-serif;
+    display: block;
+    border: none;
+    margin: 0 auto;
+    width: 170px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #eff0f4;
+    background-color: #415f9d;
+    transition: all .3s ease;
+ }
+
+ .banner-digitalizacao .buttons .botao-cinza{
+    height: 50px;
+    font-family: 'Exo 2', sans-serif;
+    display: block;
+    border: none;
+    margin: 0 auto;
+    width: 170px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #eff0f4;
+    background-color: grey;
+    transition: all .3s ease;
+    padding-top: 10px;
+ }
+
+ .banner-digitalizacao .buttons .botao:hover{
+    background-color: #233b6e;
+
+ } 
+
+ .fundo-azul{
+    background-color: #415f9d;
+    background: -webkit-linear-gradient( #415f9d , #233b6e);
+    background: -webkit-linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( rgb(35,59,110,0.6) , rgb(35,59,110,0.6)); /* Standard syntax */
+    padding: 20px 180px 40px 180px;     
+    color:#f1f1f1;
+ }
+
+ .fundo-azul h3{
+    font-size: 36px;
+ } 
+
+ .fundo-azul p{
+     color: #f1f1f1;
+     font-size: 16px;
+ }
+
+ /* Resultados */
+
+ .resultados{
+    margin-top:940px ;
+}
+
+/* News */
+
+.newsletter{
+    background-color: #415f9d;
+    background: -webkit-linear-gradient( #415f9d , #233b6e);
+    background: -webkit-linear-gradient( #415f9d , #233b6e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #415f9d , #233b6e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #415f9d , #233b6e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #415f9d , #233b6e); /* Standard syntax */
+    text-align: center;
+}
+
+.newsletter h3{
+    font-size: 36px;
+    color: #f1f1f1;
+}
+
+.newsletter .linha{
+    text-align: center;    
+    display: flex;
+    margin: 50px auto;
+    width: 400px;
+}
+
+.newsletter .linha button{
+    margin: 0;
+}
+
+.newsletter .linha input{
+    padding: 0 15px;
+}
+
+/* Qualidades */
+
+.qualidades{
+    text-align: center;
+}
+
+.qualidades h3{
+    font-size: 36px;
+}
+
+.qualidade p{
+    font-size:16px;
+}
+
+.qualidades .linha{
+    display: flex;
+    margin-top: 40px;
+}
+
+.qualidades .col-3{
+    width: calc(100%/3);
+    height: 728px;
+    margin: 0 20px;
+    padding: 130px 60px 40px 60px;
+    color: #f1f1f1;
+}
+
+.qualidades .col-3 img{
+    width: 40px;
+}
+
+.qualidades .col-3 h5{
+    font-size: 22px;
+}
+
+.qualidades .parte-1{
+    background-image: url("../img/web/part1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 728px; */
+}
+
+.qualidades .parte-2{
+    background-image: url("../img/web/part2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 728px; */
+}
+
+.qualidades .parte-3{
+    background-image: url("../img/web/part3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 728px; */
+}
+
+/* Contato Interno */
+
+.contato-geral{
+    padding-bottom: 0;
+    background-color: #415f9d;
+    background: -webkit-linear-gradient( #415f9d , #233b6e);
+    background: -webkit-linear-gradient( #415f9d , #233b6e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #415f9d , #233b6e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #415f9d , #233b6e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #415f9d , #233b6e); /* Standard syntax */
+    color: #f1f1f1;
+}
+
+.contato-geral input{
+    color:#434343;
+}
+
+/*Responsivo*/
+/*Tela média*/
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+
+}
+
+/*Tela de tablet*/
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .banner-digitalizacao h1{
+        font-size: 38px;
+    }
+
+    .banner-digitalizacao p{
+        font-size: 16px;
+    }
+
+    .fundo-azul{
+        padding: 20px 80px 40px 80px;     
+        color:#f1f1f1;
+    }
+
+     /* Resultados-tablet */
+
+    .resultados{
+        margin-top:980px ;
+    }
+
+    /* Qualidades-tablet */
+
+    .qualidades .linha{
+        flex-direction: column;
+    }
+
+    .qualidades .col-3{
+        padding: 40px;
+        margin: 0 auto 20px auto;
+        width: 700px;
+        height: auto;
+    }
+
+    .qualidades .parte-1, .qualidades .parte-2, .qualidades .parte-3{
+        background-color: #415f9d;
+    background: -webkit-linear-gradient( #415f9d , #233b6e);
+    background: -webkit-linear-gradient( #415f9d , #233b6e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #415f9d , #233b6e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #415f9d , #233b6e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #415f9d , #233b6e); /* Standard syntax */
+    }
+}
+
+
+/*Tela de telefone*/
+
+@media only screen and (max-width:767px) {
+    .banner-digitalizacao h1{
+        font-size: 38px;
+    }
+
+    .banner-digitalizacao p{
+        font-size: 16px;
+    }
+
+    .banner-digitalizacao .buttons .botao{
+        width: 100px;
+        font-size: 14px;        
+        padding-top: 5px;
+    }
+
+    .banner-digitalizacao .buttons .botao-cinza{
+        width: 100px;
+        font-size: 14px;
+        padding-top: 12px;
+    }
+
+    .fundo-azul{
+        padding: 20px 40px 40px 40px;     
+        color:#f1f1f1;
+    }
+
+     /* Resultados-tablet */
+
+    .resultados{
+        margin-top:1400px ;
+    }
+
+    /* Qualidades-tablet */
+
+    .qualidades .linha{
+        flex-direction: column;
+    }
+
+    .qualidades .col-3{
+        padding: 40px;
+        margin: 0 auto 20px auto;
+        width: 90%;
+        height: auto;
+    }
+
+    .qualidades .parte-1, .qualidades .parte-2, .qualidades .parte-3{
+        background-color: #415f9d;
+        background: -webkit-linear-gradient( #415f9d , #233b6e);
+        background: -webkit-linear-gradient( #415f9d , #233b6e); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient( #415f9d , #233b6e); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient( #415f9d , #233b6e); /* For Firefox 3.6 to 15 */
+        background: linear-gradient( #415f9d , #233b6e); /* Standard syntax */
+    }
+
+    /* newsletter */
+
+    .newsletter{
+        padding: 20px;
+    }
+
+    .newsletter .linha{
+        width: 280px;
+        align-items: center;
+    }
+
+    .newsletter .linha button{
+        width: 40%;
+    }
+
+    .newsletter .linha input{
+        width: 60%;
+    }
+}
+

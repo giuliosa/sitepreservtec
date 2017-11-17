@@ -47,5 +47,5 @@
         
 
     </div>
-    <button type="button" name="button" onClick="location.href='/preservtec/contato'">Peça um orçamento</button>
+    <button type="button" name="button" onClick="location.href='#orcamento'">Peça um orçamento</button>
 </section>

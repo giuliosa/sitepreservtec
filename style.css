@@ -8,6 +8,7 @@
 @import 'css/blog.css';
 @import 'css/contato.css';
 @import 'css/evento.css';
+@import 'css/digitalizacao.css';
 @import 'css/odometer.css';
 @import 'css/flexslider.css';
 @import 'css/owl.carousel.min.css';
@@ -77,7 +78,7 @@ h4 {
     font-weight: bold;
 }
 
-button{
+button, .butn{
     font-family: 'Exo 2', sans-serif;
     display: block;
     border: none;
@@ -633,15 +634,12 @@ nav li.current_page_item a {
     width: 100%;
     padding: 40px 0;
     margin-bottom: 40px;
-    background-image: url("img/web/imagem-resultado.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-color: #eff0f4; */
 }
 
 .resultados h2 {
-    color: #eff0f4;
+    font-size:36px;
+    color: #434343;
 }
 
 .resultados .container {
@@ -653,7 +651,7 @@ nav li.current_page_item a {
 .resultados .col-1{
     width: 100%;
     text-align: center;
-    color: #eff0f4;
+    color: #434343;
     height: 40px;
     margin-bottom: 100px;
 }
@@ -669,7 +667,7 @@ nav li.current_page_item a {
     margin: 70px 20px 40px 20px;
     padding: 20px;
     text-align: center;
-    color: #eff0f4;
+    color: #434343;
 }
 
 .resultados .numero {
@@ -681,25 +679,23 @@ nav li.current_page_item a {
 .resultados .titulo-numero {
     font-family: 'Lora', Georgia, "Times New Roman", serif;
     font-size: 20px;
-    text-shadow: 2px 2px 5px black;
-
+    
 }
 
 .resultados .titulo-numero a, .resultados .titulo-numero-master a{
-    color: #eff0f4;
+    color: #434343;
     text-decoration: none;
 }
 
 .resultados .numero-master {
     font-family: 'Exo 2', sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 900;
 }
 
 .resultados .titulo-numero-master {
     font-family: 'Lora', Georgia, "Times New Roman", serif;
-    font-size: 40px;
-    text-shadow: 2px 2px 5px black;
+    font-size: 30px;
 }
 
 .resultados button {
