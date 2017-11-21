@@ -1,6 +1,11 @@
 <?php get_header(); ?>
     <section class="blog">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+
+          //Pegando o ID e url do autor
+          $author_ID = get_the_author_meta('ID');
+          $author_url = get_the_author_meta('url');
+         ?>
         <h2><?php the_title(); ?></h2>
         <div class="container">
           <div class="postagens">
@@ -18,7 +23,7 @@
                 <div class="autor">
                   <div class="imagem-autor">
                     <!-- <img src="img/web/team-1.jpg" alt=""> -->
-                    <?php echo get_avatar( 'giulio.sa@preservtec.com.br'); ?>
+                    <?php echo get_avatar($author_ID, 90, '', false, array('class' => 'img-circle')); ?>
                   </div>
                   <div class="info-autor">
                     <h4><?php the_author(); ?></h4>

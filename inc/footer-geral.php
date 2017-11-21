@@ -13,7 +13,6 @@
             <ul>
                 <li><a href="/preservtec/home">HOME</a></li>
                 <li><a href="/preservtec/servico">SERVIÇOS</a></li>
-                <li><a href="/preservtec/sobre">SOBRE</a></li>
                 <li><a href="/preservtec/portfolio">PORTIFÓLIO</a></li>
                 <li><a href="/preservtec/blog">BLOG</a></li>
                 <li><a href="/preservtec/contato">CONTATO</a></li>

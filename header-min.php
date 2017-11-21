@@ -60,11 +60,16 @@ $url .= $_SERVER['REQUEST_URI'];
 
 <body>
     <header>
-    
-          <nav class="menu-geral">
+
+
+          <nav class="menu-geral <?php if(is_page('marketing') || is_page( 'desenvolvimento' )): echo('menu-branco') ; endif; ?>">
               <div class="container">
                 <div class="left">
-                  <a href="/preservtec/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Preservtec"></a>
+                  <?php if (is_page('digitalizacao')) :?>
+                    <a href="/preservtec/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Preservtec"></a>
+                  <?php else : ?>
+                    <a href="/preservtec/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-branco.png" alt="Logo Preservtec"></a>
+                  <?php endif; ?>  
                 </div>
                 <div class="right">
                   <span><i class="fa fa-bars menu-burguer" aria-hidden="true"></i></span>

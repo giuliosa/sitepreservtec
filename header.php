@@ -85,8 +85,9 @@ $url.= $_SERVER['REQUEST_URI'];
                   <a href="/preservtec/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-branco.png" alt="Logo Preservtec"></a>
                 </div>
                 <div class="right">
-                  <span><i class="fa fa-bars menu-burguer" aria-hidden="true"></i>
-</span>
+                  <span>
+                    <i class="fa fa-bars menu-burguer" aria-hidden="true"></i>
+                  </span>
                   <?php
                     $args = array(
                       'menu'              => 'principal',
