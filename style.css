@@ -19,7 +19,7 @@
 Theme Name: Preservtec Theme
 Theme URI: https://preservtec.com.br
 Author: Giulio Sá
-Author URI: http://giuliosa.com.br
+Author URI: https://giuliosa.com.br
 Description: Tema criado para a empresa Preservtec
 Version: 1.0.1
 */
@@ -177,6 +177,14 @@ button:hover , .butn input:hover{
 .menu-burguer{
     display: none;
     opacity: 0;
+}
+
+header .menu-geral .menu-burguer {
+    display: block;
+    visibility:visible;
+    opacity: 1;
+    margin-top:15px;
+    color: #f1f1f1;
 }
 
  header .menu-hamburguer:hover, header .cross:hover {

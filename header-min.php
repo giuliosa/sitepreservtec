@@ -62,7 +62,7 @@ $url .= $_SERVER['REQUEST_URI'];
     <header>
 
 
-          <nav class="menu-geral <?php if(is_page('marketing') || is_page( 'desenvolvimento' )): echo('menu-branco') ; endif; ?>">
+          <nav class="menu-geral <?php if(is_page('marketing') || is_page( 'desenvolvimento' ) ): echo('menu-branco') ; endif; ?>">
               <div class="container">
                 <div class="left">
                   <?php if (is_page('digitalizacao')) :?>

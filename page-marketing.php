@@ -32,7 +32,7 @@
             <div class="corpo-servico">
                 <h5>Landing Pages</h5>
                 <p>Percebemos, cada vez mais que a determinação clara de objetivos</p>
-                <button>Compre Agora</button>
+                <button onClick="location.href='preservtec/produto/landing-pages'">Compre Agora</button>
             </div>
         </div>
         <div class="servico-bloco">
@@ -42,7 +42,7 @@
             <div class="corpo-servico">
                 <h5>SEO & Analytics</h5>
                 <p>Percebemos, cada vez mais que a determinação clara de objetivos</p>
-                <button>Compre Agora</button>
+                <button onClick="location.href='preservtec/produto/seo-analytics'">Compre Agora</button>
             </div>
         </div>
         <div class="servico-bloco">
@@ -52,7 +52,7 @@
             <div class="corpo-servico">
                 <h5>Mídias Sociais</h5>
                 <p>Percebemos, cada vez mais que a determinação clara de objetivos</p>
-                <button>Compre Agora</button>
+                <button onClick="location.href='preservtec/produto/midias-sociais'">Compre Agora</button>
             </div>
         </div>
     </div>

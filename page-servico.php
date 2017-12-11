@@ -29,7 +29,5 @@
 
     <?php include(TEMPLATEPATH . '/inc/comentarios-include.php');?>
 
-    <!-- <?php//include(TEMPLATEPATH . '/inc/contato-include.php');?> -->
-
     <?php endwhile; else: endif?>
 <?php get_footer(); ?>
